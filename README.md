@@ -1,2 +1,2 @@
 # Smart-WAF
-An AI based Web Application Firewall built using Python
+An AI based Web Application Firewall/IPS (Intrusion Detection System) built using Python
