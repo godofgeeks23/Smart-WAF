@@ -82,7 +82,6 @@ matrix = confusion_matrix(y_test, y_pred)
 print("Score Logistic Regression :", score_test)
 print("Confusion Matrix: ")
 print(matrix)
-# display precision, recall, f1-score, false positive rate, false negative rate
 print(metrics.classification_report(y_test, y_pred))
 filename = 'logisticregression_model.sav'
 pickle.dump(lgs, open(filename, 'wb'))
