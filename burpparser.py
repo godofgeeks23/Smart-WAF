@@ -58,8 +58,9 @@ def writerequest_to_csv(request_dict):
 
 def parse_burp_logs(log_file, output_file):
     with open(log_file, 'r') as f:
-        dom = minidom.parse(f)
+        dom = minidom.parse(f)  
         items = dom.getElementsByTagName('item')
+        
         with open(output_file, 'w', newline='') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(['Time', 'URL', 'IP Address', 'Port', 'Method',
